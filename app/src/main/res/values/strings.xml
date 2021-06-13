@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">EZQ</string>
+
+    <string name="txt_login">Hello !\nSignup to get started</string>
+    <string name="txt_reg">Hello Again !\nWelcome back</string>
+    <string name="txt_regs">Yeah ! You have just registered to\nwith us successfully</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="prev">Previous</string>
+    <string name="start">LOGIN</string>
+    <string name="tetx">H/N Old No 25 New no 34\nkovil street\nPotheri\nChennai\nTamilnadu\n600061</string>
+    <string name="slide_1_title">No More Long Queues</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="txt_current">CURRENT\nQUEUE</string>
+    <string name="txt_mr">MY\nQUEUE</string>
+
+    <string name="slide_1_desc">Reducing walk aways</string>
+
+
+    <string name="slide_2_title">No one can cut Queues</string>
+
+    <string name="slide_2_desc">Eliminating lines</string>
+
+    <string name="slide_3_title">Timely Appointment</string>
+
+    <string name="slide_3_desc">Notifies your customers when their turn approaches</string>
+
+    <string name="activity_appcompat_message">I am a PinCompatActivity!</string>
+
+    <string name="home_text">Where do you want\nto get queued today</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_not_locked_text">Nothing should happen on this page, here for test purpose</string>
+    <string name="activity_dialog_title">Forgot you Pincode?</string>
+    <string name="activity_dialog_accept">OK</string>
+    <string name="activity_dialog_decline">CANCEL</string>
+    <string name="activity_dialog_content">Tap \'OK\' to log out, when you log back in you\'ll be able to create a new Pincode.\n\nIf you remember your Pincode, tap \'Cancel\' to go back.</string>
+
+    <string name="text_alcohol">Overview of this app</string>
+    <string name="text_coffee">Why EZQ</string>
+    <string name="text_pasta">How can i get Queued</string>
+    <string name="text_cold_drinks">How do i know of my turn</string>
+    <string name="text_can"> Can i join in multiple queues</string>
+    <string name="text_cold_cancel">Can i cancel a queue</string>
+    <string name="text_cold_queue">Honouring a Queue</string>
+    <string name="text_expanded">Expanded</string>
+    <string name="text_collapsed">Collapsed</string>
+    <string-array name="string_array_alcohol">
+        <item>EZQ are specially designed for clinics allowing them to reduce queue lengths and increase staff productivity and operational efficiency.</item>
+    </string-array>
+    <string-array name="string_array_coffee">
+        <item>Having an efficient clinic queue management system has now become a necessity at health care institutions especially when the patients visiting the facility are either in pain or frail health, making it difficult for them to queue for long periods of time until a medical practitioner is available to treat them. Our clinic queue management system helps manage a seamless flow of patients right from an initial entry point to check out.</item>
+    </string-array>
+    <string-array name="string_array_pasta">
+        <item>It is very simple to get queued, Click on the Now button in home page or click on the search button in the bottom menu, which will list all the clinics. select the clinic you want to visit and choose the doctor you want to see and get yourself queued</item>
+    </string-array>
+    <string-array name="string_array_cold_drinks">
+        <item>Once you get queued, you will see the floating bar in the home page, where you will get notified of the every queue movement. You will also receive the notification of your queue. once you are the last one waiting your phone will get the vibration.</item>
+    </string-array>
+    <string-array name="string_array_multiple_drinks">
+        <item>Yes, you can join in multiple queues, but any point of time you can get into maximum of three queues</item>
+    </string-array>
+    <string-array name="string_array_cancel_drinks">
+        <item>Yes, any point of time you can cancel a queue. if you cancel queues more than three times in a day, the app will automatically restrict you of booking for that day.</item>
+    </string-array>
+    <string-array name="string_array_honou_drinks">
+        <item>We would to like serve all customers in a fair way. However for any reason, the Doctor or the clinic want to reject the queued customers, they can cancel it any point of time.</item>
+    </string-array>
+
+
+
+</resources>

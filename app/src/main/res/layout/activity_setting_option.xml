@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.zealoit.eqz.SetPinActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_hed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topheaderblack">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/aarrow"
+            android:onClick="back"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/txt_otps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Setting Option"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lock"
+        android:layout_below="@+id/top_hed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_leavename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/merriweather_bold"
+            android:text="Passcode Lock"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            app:fontFamily="@font/roboto" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:layout_alignBaseline="@+id/txt_leavename"
+            android:layout_alignBottom="@+id/txt_leavename"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="13dp"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:textColor="#5861D8"
+            android:textStyle="normal"
+            app:fontFamily="@font/roboto" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_below="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#212121"/>
+
+    <RelativeLayout
+        android:id="@+id/noti"
+        android:layout_below="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_leavenames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="13dp"
+            android:fontFamily="@font/merriweather_bold"
+            android:text="Notification"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            app:fontFamily="@font/roboto" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:layout_alignBaseline="@+id/txt_leavenames"
+            android:layout_alignBottom="@+id/txt_leavenames"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="13dp"
+            android:text=""
+            android:textColor="#5861D8"
+            android:textStyle="normal"
+            app:fontFamily="@font/roboto" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

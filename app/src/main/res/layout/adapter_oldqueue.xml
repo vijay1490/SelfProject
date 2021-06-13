@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_queue"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_tick_cross"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/txt_business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/img_queue"
+            android:gravity="left"
+            android:text="Sriram Clinic"
+            android:fontFamily="@font/gothicb"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_business_name"
+            android:layout_toRightOf="@id/img_queue">
+
+            <TextView
+                android:id="@+id/txt_provider_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:text="DR. Venkatesh, Pediatrician"
+                android:fontFamily="@font/centurygothic"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_queue_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="A105"
+                android:fontFamily="@font/gothicb"
+                android:textColor="#ff6600"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rights_arrow"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/row"
+            android:layout_toRightOf="@id/img_queue">
+
+            <TextView
+                android:id="@+id/txt_queue_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:fontFamily="@font/centurygothic"
+                android:text="20 Mar 2021, 13:12:45"
+                android:textColor="#ff6600"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_queue_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="A105"
+                android:fontFamily="@font/centurygothic"
+                android:textColor="#ff6600"
+                android:textSize="12dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#212121"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

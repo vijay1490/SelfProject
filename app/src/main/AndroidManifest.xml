@@ -1,0 +1,190 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zealoit.eqz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ezq_color"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ezq_color"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <activity android:name="com.zealoit.eqz.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.WelcomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.OtpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.OtpSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.RegisterSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.HomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.AcountActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.LockActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityAccountList"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.SetPinActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ConformPinActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.ActivitySettingOptions"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityResuaurant"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityClinic"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivitySaloan"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityLocationName"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityIndividual"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.ActivityQueuedBooked"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.ActivityPastBooking"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.HelpAndSupport"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name="com.zealoit.eqz.BusinessProfileActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.NoDataActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.QueueConformationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.zealoit.eqz.ActivityNoInternet"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver android:name="com.zealoit.eqz.Utils.IncomingSms">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ezq_color" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <service
+            android:name=".Service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+</manifest>

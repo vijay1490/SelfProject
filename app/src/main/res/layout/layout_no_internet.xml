@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imganims"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:visibility="visible"
+        android:scaleType="centerInside"
+        android:src="@drawable/nointernet"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops! We are not able to connect"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/gothicb"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ugh! Something's not right with your internet"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/centurygothic"
+        android:textSize="15dp"
+        android:textColor="  #8B4513"></TextView>
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_pass"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shape_button"
+        android:text="Try Again"
+        android:onClick="tryagain"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+
+
+</LinearLayout>

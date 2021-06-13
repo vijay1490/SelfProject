@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+        android:id="@+id/regiontt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_back_arrow"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:onClick="end"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/left_arrow" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_profiles"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ezq_color"
+                    android:scaleType="centerInside"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_otps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center"
+            android:text="Verify Phone"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_otpss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/centurygothic"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10sp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_otp"
+                android:inputType="phone"
+                android:maxLength="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_up_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginStart="30sp"
+            android:background="@drawable/shape_button"
+            android:text="CONFIRM"
+            android:textColor="#fff"
+            android:textSize="17dp"
+            android:onClick="home"/>
+
+        <LinearLayout
+            android:id="@+id/lin_wrong_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/img_wrong_otp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/avatar"></ImageView>
+
+        <TextView
+            android:id="@+id/txt_wrong_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_versionname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="resendotp"
+            android:text="Didn't recive code? Request Again"
+            android:textColor="#424242"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.zealoit.eqz.RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimaryDark">
+                <ImageView
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="30dp"
+                    android:onClick="backhome"
+                    android:src="@drawable/aarrow"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="@drawable/servicebg"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_name_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_horizontal"
+                    android:text="SRIRAM CLINIC"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    app:fontFamily="@font/centurygothic"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/txt_door_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="12/3, Daniel Street,"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/txt_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Anjugam Nagar"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Villivakkam,"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_horizontal"
+                    android:text="Chennai, 600082"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Choose the specialist and get Queued"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:visibility="visible"
+                android:textStyle="normal"/>
+        </LinearLayout>
+            <View
+                android:layout_width="90dp"
+                android:layout_height="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="#aaa"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_getallbusinessprovider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <LinearLayout
+                android:id="@+id/lin_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstLayoutdd"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imganims"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/avatar"></ImageView>
+
+                <TextView
+                    android:id="@+id/txt_nodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oops Sorry!! We are having issuess with server"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryDark"></TextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/getqueued"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/edit_pass"
+                android:layout_marginEnd="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/shape_button"
+                android:text="Get Queued"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:itemIconSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="false"
+        android:background="?android:attr/windowBackground"
+        android:clipChildren="false"
+        android:paddingTop="0dp"
+        app:itemTextColor="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

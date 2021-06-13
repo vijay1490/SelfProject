@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.zealoit.eqz.RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/toolbar_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/topheaderblack"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:onClick="back"
+                                android:src="@drawable/aarrow"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:layout_gravity="center"
+                                android:gravity="left"
+                                android:singleLine="true"
+                                android:layout_marginLeft="20dp"
+                                android:text="RESTAURANT"
+                                android:textColor="#fff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:visibility="visible"
+                                app:fontFamily="@font/merriweather" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/current_location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_gravity="right"
+                                    android:background="@null"
+                                    android:gravity="right"
+                                    android:singleLine="true"
+                                    android:text="CLINIC"
+                                    android:textColor="#fff"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:fontFamily="@font/merriweather" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="location">
+
+                                    <TextView
+                                        android:id="@+id/current_locations"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="22dp"
+                                        android:layout_toLeftOf="@+id/view_top"
+                                        android:background="@null"
+                                        android:gravity="right"
+                                        android:singleLine="true"
+                                        android:text="NOW"
+                                        android:textColor="#FFA500"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        app:fontFamily="@font/merriweather_bold" />
+
+
+                                    <View
+                                        android:id="@+id/view_top"
+                                        android:layout_width="45dp"
+                                        android:layout_height="2dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="30dp"
+                                        android:background="#ffffff"/>
+
+                                    <View
+                                        android:id="@+id/view_tops"
+                                        android:layout_width="25dp"
+                                        android:layout_height="2dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_below="@+id/view_top"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="30dp"
+                                        android:background="#ffffff"/>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/searchCity_LL"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shadow_search"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ET_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search_24dp"
+                    android:drawablePadding="10dp"
+                    android:focusable="true"
+                    android:gravity="center|start"
+                    android:hint="Search "
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorFullWidth="false"
+                app:tabPaddingStart="15dp"
+                app:tabPaddingEnd="15dp"
+                app:tabMinWidth="190dp">
+            </com.google.android.material.tabs.TabLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:itemIconSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="false"
+        android:background="?android:attr/windowBackground"
+        android:clipChildren="false"
+        android:paddingTop="0dp"
+        app:itemTextColor="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

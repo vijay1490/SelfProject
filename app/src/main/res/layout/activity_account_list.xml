@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/toolbar_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/topheaderblack"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:onClick="back"
+                            android:src="@drawable/aarrow"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:singleLine="true"
+                            android:text="ACCOUNT"
+                            android:textColor="#fff"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:fontFamily="@font/gothicb" />
+                    </LinearLayout>
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar_LL"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/shape_img_round"
+                    app:cardCornerRadius="8dp"
+                    android:elevation="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imyg_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/asvatar" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Rakesh Sharma"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/gothicb" />
+
+
+                <TextView
+                    android:id="@+id/txt_customer_email_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="rakeshsharma@gmail.com"
+                    android:textColor="#CDCDCD"
+                    android:textSize="15dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_profiles"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:onClick="myaccount"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Account"
+                    android:drawableLeft="@drawable/account"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:paddingRight="20dp"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_profiless"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profiles"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:onClick="pastbooking"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Past Bookings"
+                    android:drawableLeft="@drawable/calendar"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:paddingRight="20dp"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_profilesss"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profiless"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Past Bookings"
+                    android:drawableLeft="@drawable/calendar"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:paddingRight="20dp"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_profilessss"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profilesss"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:onClick="helpandsupport"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/community"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="20dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="FAQ"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    android:visibility="visible"
+                    app:fontFamily="@font/centurygothic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_profilesssss"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profilessss"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:onClick="share"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invite a Friend"
+                    android:drawableLeft="@drawable/add_contact"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_profilessssss"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profilesssss"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:onClick="setting"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/settings"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Settings"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    android:visibility="visible"
+                    app:fontFamily="@font/centurygothic"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_profilesssssss"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_profilessssss"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:background="@drawable/shape_account"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:drawableLeft="@drawable/logout"
+                    android:drawablePadding="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left|center"
+                    android:textSize="20dp"
+                    android:visibility="visible"
+                    android:textStyle="normal"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/centurygothic"
+                    android:onClick="logout"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fgggggg"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/lin_profilesssssss"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#acacac"
+                android:textSize="12dp"
+                android:visibility="visible"
+                android:textStyle="normal"
+                android:typeface="monospace"
+                app:fontFamily="@font/centurygothic" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:itemIconSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="false"
+        android:background="?android:attr/windowBackground"
+        android:clipChildren="false"
+        android:paddingTop="0dp"
+        app:itemTextColor="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation"/>
+</RelativeLayout>
